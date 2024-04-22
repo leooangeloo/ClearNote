@@ -105,15 +105,19 @@ class ClearNoteApp:
         
         file_path = filedialog.asksaveasfilename(defaultextension=".txt", filetypes=[("Text files", "*.txt")])
         if file_path:
-            with open(file_path, "w") as file:
-                file.write(notes)
-            print("Notes saved successfully!")
+            try:
+                with open(file_path, "w") as file:
+                    file.write(notes)
+                messagebox.showinfo("Success", "Notes saved successfully!")
+            except Exception as e:
+                messagebox.showerror("Error", f"Failed to save notes: {e}")
+
         
     def clear_notes(self):
         # Function to clear the text area of the current tab
         current_tab_index = self.notebook.index("current")
         self.text_areas[current_tab_index].delete("1.0", "end")
-        print("Notes cleared!")
+        messagebox.showinfo("Success", "Notes cleared!")
 
 def main():
     root = tk.Tk()
