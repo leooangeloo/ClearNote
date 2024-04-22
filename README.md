@@ -1,9 +1,18 @@
-# ClearNote - A transparent, note-taking desktop application written in Python.
-## Developer/Author: Leo Angelo Genota
+# ClearNote
+A transparent, note-taking desktop application written in Python. Write notes and view them while in a meeting or interview.
 
----
+Developer/Author: Leo Angelo Genota
 
-## STEP 1: Install Python on your system.
+## Features
+- Transparency - provides users the ability to view contents behind the application
+- Tabs - provides users the ability to write multiple notes at a time
+- Clear - provides users the ability to clear the contents of the current tab
+- Save - provides users the ability to save their notes to their desired location
+
+![image](https://github.com/leooangeloo/ClearNote/assets/43383899/6c9f00d3-1c96-425e-ace7-45e7b5085d6f)
+
+## How to run the application locally
+### STEP 1: Install Python on your system.
 
 ### Install Python on Windows:
 
@@ -15,8 +24,6 @@
 2. **With the Official Installer**:
     - Download the Python installer from the [official Python download website](https://www.python.org/downloads/).
     - During installation, make sure to check the box that says "Add Python to PATH."
-
----
 
 ### Installation on MacOS:
 
@@ -32,8 +39,6 @@
     - If you're not comfortable with the command line, use the official installer:
       - Download it from the [Python download website](https://www.python.org/downloads/).
 
----
-
 ### Install Python on Linux:
 
 1. **Windows Subsystem for Linux (WSL)**:
@@ -48,8 +53,6 @@
       $ sudo apt update
       $ sudo apt install python3
       ```
-
----
 
 ## STEP 2: Run the application using python.
 
